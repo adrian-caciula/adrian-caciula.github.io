@@ -95,7 +95,18 @@
 			</ul>
 		</footer>
 		
-		<script>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+		
+<!--
+<script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -117,5 +128,6 @@ window.onclick = function(event) {
   }
 }
 </script>
+-->
 	</body>
 </html>
