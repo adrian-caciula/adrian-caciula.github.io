@@ -52,21 +52,35 @@
 	</head>
 	<body>
 		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-			<li>
-				<button onclick="myFunction()" >Dropdown</button>
-				  <div id="myDropdown" >
-				    <a href="mlhc17mit.html">MLHC17MIT</a>
-				    <a href="#about">About</a>
-				    <a href="#contact">Contact</a>
-				  </div>
-			</li>
-			<li><a href="/about">Research</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-			<li><a href="/about">About</a></li>
-    		</ul>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="mlhc17mit.html">MLHC17MIT</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Teaching</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+	    
+	    
+	<li class="dropdown-submenu">
+		<a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+		  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+		  <li class="dropdown-submenu">
+		    <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+		    <ul class="dropdown-menu">
+		      <li><a href="#">3rd level dropdown</a></li>
+		      <li><a href="#">3rd level dropdown</a></li>
+		    </ul>
+		  </li>
+		</ul>
+      	</li>
+	    
+    </div>
+  </li>
+</ul>
 		</nav>
 		<div class="container">
     		<div class="blurb">
