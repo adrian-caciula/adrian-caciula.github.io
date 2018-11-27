@@ -1,0 +1,222 @@
+
+<html>
+<head>
+<title> Getting Started with Python </title>
+</head>
+
+<body>
+<center>
+<h2> Getting Started with Python Programming for Windows Users </h2>
+</center>
+
+<h4> Installation of Python </h4>
+<ul>
+<li> Download the current production version of Python (3.6.0) from the
+<a href = "http://www.python.org"> Python Download </a> site.
+<li>  Double click on the icon of the file that you just downloaded.
+<li> There should be two options - Install Now and Customize installation.
+On the same menu screen there should be two options:
+<ul>
+<li> Install launcher for all users (recommended)
+<li> Add Python 3.6 to PATH
+</ul>
+Make sure both are checked, and then press Customize Installation.
+<li> The next screen should be titled Optional Features. Make sure all
+the boxes are ticked.
+<li> The next screen should be titled Advanced Options. Make sure the
+following 4 boxes are ticked:
+<ul>
+<li> Install for all users
+<li> Associate files with Python
+<li> Create shortcuts for installed applications
+<li> Add python to environment variables
+</ul>
+<li> Copy the path listed under Customize install location. It should be
+something like: <br /><br />
+C:\Program Files (x86)\Python36-32 <br /><br />
+** You may or may not have the (x86) in the path depending on the 
+architecture of your PC. Do not worry about it.
+<li> Click next to install
+</ul>
+
+<h4> Setting up the Environment </h4>
+<ul>
+<li> Starting at <i>My Computer</i> go to the following directory 
+C:\Python36. In that folder you should see all the Python files.
+<li> Copy that address starting with <i>C:</i> and ending with <i>35</i>
+and close that window.
+<li> For Windows 10 / 8 - Right click on the Windows start button and 
+Click on System.
+<li> For Windows 7 and below Click on <i>Start</i>. Right Click on <i>My 
+Computer</i>.
+<li> Click on <i>Properties</i>. Click on <i>Advanced System Settings</i> or
+<i>Advanced</i>.
+<li> Click on <i>Environment Variables</i>. 
+<li> Under <i>System Variables</i> search for the variable <i>Path</i>.
+<li> Select <i>Path</i> by clicking on it. Click on <i>Edit</i>.
+<li> Scroll all the way to the right of the field called <i>Variable
+value</i> using the right arrow.
+<li> Add a semi-colon (;) to the end and paste the path (to the Python 
+folder) that you previously copied. Click <i>OK</i>.
+<li> Search for <i>CLASSPATH</i> in your list of System Variables. If it
+does not exist click on <i>New</i>.
+<li> Enter <i>CLASSPATH</i> for the field <i>Variable name</i>
+<li> Enter <i>.;</i> for the field <i>Variable value</i>. Click <i>OK</i>.
+<li> If the variable <i>CLASSPATH</i> already exists, click <i>Edit</i>.
+<li> In the field <i>Variable value</i> scroll all the way to the left using
+the left arrow. Insert <i>.;</i> if that is not there already. Click <i>OK</i>
+<li> Click <i>OK</i> until all the windows close. You have successfully
+set up the computing environment.
+</ul>
+
+<h4> Writing Your First Python Program </h4>
+<ul>
+<li> Create a folder called <i>CS303E</i> on your <i>C:\</i> drive. You 
+will be storing all your Python programs in this folder.
+<li> Go to <i>Start</i> and either type <i>Run</i> in the <i>Start Search</i>
+box at the bottom or click on <i>Run</i>.
+<li> Type in <i>notepad</i> in the field called <i>Open</i>.
+<li> In <i>Notepad</i> type in the following program exactly as written:
+</ul>
+
+<pre>
+
+# File: Hello.py
+def main():
+  print ("Hello World!")
+
+main()
+
+</pre>
+
+<ul>
+<li> Go to <i>File</i> and click on <i>Save as</i>.
+<li> In the field <i>Save in</i> browse for the <i>C:</i> drive and then
+select the folder <i>COM-XXXX</i>.
+<li> For the field <i>File name</i> remove everything that is there
+and type in <i>Hello.py</i>.
+<li> In the field <i>Save as type</i> select <i>All Files</i>
+<li> Click on <i>Save</i>. You have just created your first Python program.
+</ul>
+
+<h4> Running Your First Program </h4>
+<ul>
+<li> Go to <i>Start</i> and click on <i>Run</i>.
+<li> Type <i>cmd</i> in the <i>Open</i> field and click </i>OK</i>.
+<li> A dark window will appear. Type <i>cd C:\</i> and hit the key Enter.
+<li> If you type <i>dir</i> you will get a listing of all folders in
+your <i>C:</i> drive. You should see the folder <i>COM-XXXX</i> that you
+created.
+<li> Type <i>cd COM-XXXX</i> and hit Enter. It should take you to the
+COM-XXXX folder.
+<li> Type <i>dir</i> and you should see the file <i>Hello.py</i>.
+<li> To run the program, type <i>python Hello.py</i> and hit Enter.
+<li> You should see the line <i>Hello World!</i>
+<li> Congratulations, you have run your first Python program.
+</ul>
+
+<center>
+<h2> Getting Started with Python Programming for Mac Users </h2>
+</center>
+
+<p>
+Python comes bundled with Mac OS X. But the version that you have is 
+quite likely an older version. 
+<a href = "http://www.python.org/download/"> Download </a> the latest
+binary version of Python that runs on your version of Mac OS X and
+install it on your system.
+</p>
+
+<p>
+If you have an older version of Python on your Mac do <b>NOT</b> uninstall
+it. You can have various versions of Python without any problems. To run
+the newer version as a separate command edit or create a <i>.bash_profile</i>
+in your home directory. You will be in your home directory when you open
+your terminal window. Add these two lines in it:
+<pre>
+# set the path for Python 3
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+# set up an alias for the Python 3
+alias python3='/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6'
+</pre>
+Restart your computer. Now if you type <i>python</i> in any <i>Terminal</i> 
+window the older version will be called upon and if you type <i>python3</i> 
+you will be using the newer verson. To check the version you are using, run 
+this command:
+<pre>
+python - V
+
+python3 -V
+</pre>
+</p>
+
+<h4> Writing Your First Python Program </h4>
+<ul>
+<li> Click on <i>File</i> and then <i>New Finder Window</i>.
+<li> Click on <i>Documents</i>.
+<li> Click on <i>File</i> and then <i>New Folder</i>.
+<li> Call the folder <i>COM-XXXX</i>. You will be storing all class related
+programs there.
+<li> Click on <i>Applications</i> and then <i>TextEdit</i>.
+<li> Click on <i>TextEdit</i> on the menu bar and select <i>Preferences</i>.
+<li> Select <i>Plain Text</i>.
+<li> Make sure that the Smart Quote is <b>UNCHECKED</b>.
+<li> Close the empty TextEdit window and create a new one by clicking File
+&rarr; New. Now type in the following program, exactly as given:
+</ul>
+
+<pre>
+# File: Hello.py
+def main():
+  print ("Hello World!")
+
+main()
+</pre>
+
+<ul>
+<li> From the <i>File</i> menu in TextEdit click on <i>Save As</i>.
+<li> In the field <i>Save As:</i> type <i>Hello.py</i>.
+<li> Select <i>Documents</i> and the file folder <i>COM-XXXX</i>. 
+<li> Click <i>Save</i>.
+</ul>
+
+<h4> Running Your First Program </h4>
+<ul>
+<li> Select <i>Applications</i>, then <i>Utilities</i> and <i>Terminal</i>.
+<li> In your <i>Terminal</i> window type <i>ls</i> and Return. It should 
+give a listing of all the top level folders. You should see the 
+<i>Documents</i> folder.
+<li> Type <i>cd Documents</i> and hit Return. 
+<li> Type <i>ls</i> and hit Return and you should see the folder <i>COM-XXXX</i>.
+<li> Type <i>cd COM-XXXX</i> and hit Return. 
+<li> Type <i>ls</i> and hit return and you should see the file 
+<i>Hello.py</i>.
+<li> To run the program, type <i>python3 Hello.py</i> and hit Return.
+<li> You should see the line <i>Hello World!</i>
+<li> Congratulations, you have run your first Python program.
+</ul>
+
+<h4> Starting IDLE on Mac </h4>
+<ul>
+<li> In a <i>Terminal</i> window, type <i>python3</i>. This will start
+the Python shell. The prompt for that is <i>&gt;&gt;&gt;</i> </li>
+<li> At the Python shell prompt type <i> import idlelib.idle </i></li>
+<li> This will start the IDLE IDE </li>
+</ul>
+
+
+<h3> Using IDLE on either Windows or Mac </h3>
+<ul>
+<li> Start IDLE </li>
+<li> Go to File menu and click on <i>New File</i></li>
+<li> Type your program in </li>
+<li> Go to File menu and click on Save. Type in <i>filename.py</i>
+     This will save it as a plain text file, which can be opened in
+     in any editor you choose (like Notepad or TextEdit). </li>
+<li> To run your program go to <i>Run</i> and click <i>Run Module</i></li>
+</ul>
+
+</body>
+</html>
