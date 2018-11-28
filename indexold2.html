@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adrian Caciula</title>
+		<!-- link to main stylesheet -->
+		<!--
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		#move blog to Jekyll 
+		http://jmcglone.com/guides/github-pages/
+		-->
+<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		
+<!--
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+</style>
+-->
+		
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Teaching</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="https://mlhc17mit.github.io/">MLHC17MIT</a>
+	    <!-- alternatively https://mlhc17mit.github.io/ -->
+    </div>
+  </li>
+  <li><a href="#news">Research</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/cv">CV</a></li>
+<li><a href="/blog">Blog</a></li>
+</ul>
+
+<!--
+<div class="container">
+<ul>
+<li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+	
+  <li><a href="#home">Home</a></li>
+  <li><a href="mlhc17mit.html">MLHC17MIT</a></li>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">HTML</a></li>
+      <li><a tabindex="-1" href="#">CSS</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</ul>
+</div>
+-->
+    <!-- Header -->
+    <header>
+    <section id="cv" class="success">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="intro-text">
+                        <span class="skills">Machine Learning Scientist, Software Engineer</span>
+                        <hr class="star-light">
+                    </div>
+                </div>
+            </div>
+            <div class="row">   
+                <div class="col-sm-3">
+                    <img width="20%" src="20181017-Faculty-Staff-Portraits-0354-lr.jpg" alt="portrait" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-8 text-left">
+                    <p> I'm an Associate Research Scientist at the Data Science Institute at Columbia University and author of the <a
+                        href="#book">O'Reilly book "Introduction to machine
+                            learning with Python"</a>, describing a
+                    practical approach to machine learning with python and scikit-learn.
+                    I am one of the core developers of the scikit-learn machine
+                    learning library, and I have been co-maintaining it for
+                    several years. I'm also a <a href="http://software-carpentry.org/">Software Carpentry</a> instructor.
+                    In the past, I worked at the NYU Center for Data Science on open source and open science,
+                    and as Machine Learning Scientist at Amazon.
+		    You can find my <a href="cv_andreas_mueller.pdf">full cv here</a>.  </p>
+                    <p>
+                    My mission is to create open tools to lower the barrier of
+                    entry for machine learning applications, promote
+                    reproducible science and democratize the access to
+                    high-quality machine learning algorithms.</p>
+
+                    <p>
+                    You can find my institute website and information about the courses I'm teaching
+                    at <a href="http://www.cs.columbia.edu/~amueller/">www.cs.columbia.edu/~amueller/</a>.
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+	
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Adrian Caciula</h1>
+				<p>Clinical Assistant Professor of Computer Science</p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li>email: adrian [dot] caciula [at] yu [dot] edu</li>
+			</ul>
+		</footer>
+<!--		
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+		
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+-->
+	</body>
+</html>
