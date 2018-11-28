@@ -1,6 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+  <title>Machine Learning</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+  .dropdown {
+      float: left;
+      overflow: hidden;
+  }
+  .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 16px;    
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }  
+    
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+  .show {
+      display: block;
+  }
+  </style>
+  
+</head>
 <body>
+<div class="menu-container">
+  <div class="menu">
+    <div class="menu-table flex-row-space-between">
+      <div class="logo flex-row-center">
+        <a href="index.html">Home Page</a>
+      </div>
+      <a class="menu-button" tabindex="0" href="javascript:void(0)">
+        <img src="img/menu.png">
+      </a>
+      <div class="menu-items flex-row-center flex-item">
+        <a href="index.html" class="menu-highlight">Overview</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Teaching
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="https://adrian-caciula.github.io/ml19.html">Machine Learning</a>
+            <a href="https://adrian-caciula.github.io/dct19/">Data Cleaning and Transformation</a>
+          </div>
+        </div> 
+        <a href="widgets.html">Widgets</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="embedding.html">Embedding</a>
+        <a href="">GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar_click -->
+<!--Start Empty Template-->
+<!--<div class="content-container">
+  <div class="content">
+    <div class="content-table flex-column">
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+        </div>
+        <div class="flex-item flex-column">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+<!--End Empty Template-->
+<div class="content-container">
 
 <h1>Machine Learning, COM-3920-341</h1>
 
@@ -71,7 +169,7 @@ Slides: Welcome, Introduction</td>
     <li><a href="ocdevel.com/mlg" target="_blank"> Machine Learning Guide </a>
   </ul>
   
-  
+</div>
 </body>
 </html>
 
