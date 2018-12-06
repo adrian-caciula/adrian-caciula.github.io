@@ -1,0 +1,140 @@
+
+
+Exploratory Data Analysis
+
+
+Why is EDA important during the initial exploration of a dataset?
+What are the most essential tools of graphical and non-graphical EDA?
+
+
+examine the data for distribution, outliers and anomalies to direct specific testing of your hypothesis.
+
+
+EDA Objectives:
+Maximize insight into the database/understand the database structure;
+Visualize potential relationships (direction and magnitude) between exposure and outcome variables;
+Detect outliers and anomalies (values that are significantly different from the other observations);
+Develop parsimonious models (a predictive or explanatory model that performs with as few exposure variables as possible) or preliminary selection of appropriate models;
+Extract and create clinically relevant variables.
+Reference: seee the article
+
+
+When statistics are not based on strictly accurate calculations, they mislead instead of guide. The mind
+easily lets itself be taken in by the false appearance of exactitude which statistics retain in their
+mistakes, and confidently adopts errors clothed in the form of mathematical truth.
+—Alexis de Tocqueville, Democracy in America
+
+Daphne Kohavy, M.S.Ed., our Sr Instructional Technologist, Center for Innovative Teaching and Learning. 
+
+speeding up repetitive tasks by replaying previous actions on multiple datasets.
+
+
+Type 1 error
+Mistakenly concluding an effect is real (when it is due to chance).
+Type 2 error
+Mistakenly concluding an effect is due to chance (when it is real).
+
+
+Data Cleaning: Types and Techniques
+
+
+Visualization Tools
+Develop exploratory data analysis and visualization tools using Python and Jupyter
+notebooks
+Apply design principles for a variety of statistical graphics and visualizations including
+scatterplots, line charts, histograms, and choropleth maps
+Combine exploratory queries, graphics, and interaction to develop functional tools for
+exploratory data analysis and visualization
+https://asuonline.asu.edu/sites/default/files/asu_-_mcs_-_data_visualization_cse_578.pdf
+
+
+
+
+To understand the concept of regular expression
+To learn commonly used operations involving regular expression / pattern matching
+To learn the special cases occurred in regular expression / pattern matching
+
+
+Regular Expressions (RE). A pattern that specifies a set of character strings.
+REs are most often used to find sequences of characters in strings.</p>
+
+https://teamtreehouse.com/library/regular-expressions-in-python
+
+Learn what the three core regex classes are and what they do
+Become familiar with regex pattern syntax
+Be able to perform both simple and more complex searches and replacements
+Know how to reference matches by capturing groups
+
+
+
+
+Open Refine. Tool for cleaning large datasets
+https://github.com/OpenRefine/OpenRefine/wiki/Recipes
+https://datacarpentry.org/2015-09-21-Genentech/
+
+Data Visualization Techniques
+https://vironit.com/data-visualization-techniques/
+
+
+
+Vizualization Courses
+
+Skillshare
+https://www.skillshare.com/site/join?teacherRef=8606490&via=teacher-referral-channel&utm_campaign=teacher-referral-channel&utm_source=ShortUrl&utm_medium=teacher-referral-channel&vanityUsername=feltron
+
+Effective Data Visualization
+https://www.experfy.com/training/courses/effective-data-visualization#curriculum
+
+
+Teaching and Learning Data Visualization: Ideas and Assignments
+https://www.tandfonline.com/doi/abs/10.1080/00031305.2015.1123651?journalCode=utas20
+
+
+
+Computational Statistics
+http://www.stat.tugraz.at/courses/compstat.html
+
+Sampling and Resampling Techniques
+https://link.springer.com/chapter/10.1007%2F978-1-4842-2334-5_3
+http://vrossi.free.fr/DONNEES/reechant.pdf
+http://wise.cgu.edu/wp-content/uploads/2015/04/Introduction-to-Resampling-Techniques-110901.pdf
+https://www.researchgate.net/publication/265198016_Resampling_techniques_for_statistical_modeling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Extreme mad. I explode. We come from where we come, we want to live and spend like the upper higher class, but we still behave like the middle class. Waste time with useless activities, 
+
+cum astia pot deschide scoala fara nici un act!?!
+
+
+
+Au platit o firma sa le faca un website si that’s all . Dar din nou, eu sunt convins ca si-au facut treaba mai bine decat toate scolile acreditate. I am just mad cause we are not able to move forward, because we try to respect all these meaningless and fictitious rules, that don’t matter anything, anyway. Vorbim noi dupa ce pleaca ai tai
+
+
+I am even considering that maybe you should go in Romania with kids for December and I should sleep in the office and put the apartment on airbnb. We are currently declining. Our financial slope is negative . We will spend $1k for Christmas and $1k for New Years Eve.
+
+
+Cut everything that don't provide value such as talking about people, and what else did you do. Ask specific questions, or just read to improve your weakness. What are our weakness and strengths
+STOP TALKING . What is the most important thing
+

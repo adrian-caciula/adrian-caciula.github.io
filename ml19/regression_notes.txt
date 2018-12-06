@@ -1,0 +1,2 @@
+#Regression
+https://www.coursera.org/lecture/ml-regression/choosing-stepsize-and-convergence-criteria-3UvFZ
