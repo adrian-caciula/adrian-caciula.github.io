@@ -1,0 +1,40 @@
+https://link.springer.com/chapter/10.1007/978-3-319-43742-2_12
+
+https://www.oreilly.com/library/view/pandas-data-cleaning/9780135170199/PAND_01_05_00.html
+
+
+https://ischool.illinois.edu/degrees-programs/courses/is532
+
+
+https://curriculum.code.org/csp-18/unit2/13/
+http://www.icssc.org/Documents/SampleAgendas/AgendaDM.pdf
+
+
+
+https://educationguide.tue.nl/programs/bachelor-college/majors/data-science-joint-bachelor-tiu/program-learning-objectives/
+
+http://courses.edsa-project.eu/mod/page/view.php?id=231
+
+
+order books
+
+other random notes (some cdc report in this case)
+2. Clean the data
+a. Identify errors, including duplications, missing data, miscodes,
+and outliers
+b. Use statistical software to identify and correct errors
+
+
+Metagognition
+https://cft.vanderbilt.edu/guides-sub-pages/metacognition/
+
+
+For ML
+Advanced ML: https://cims.nyu.edu/~mohri/aml18/
+https://www.datacamp.com/courses/introduction-to-time-series-analysis-in-python?utm_source=customerio&utm_medium=email&utm_campaign=course_4276
+https://www.reddit.com/r/YouShouldKnow/search?q=flair_name%3A%22MachineLearning%22&restrict_sr=1
+https://www.reddit.com/r/MachineLearning/comments/8kbmyn/d_if_you_had_to_show_one_paper_to_someone_to_show/
+
+
+
+
