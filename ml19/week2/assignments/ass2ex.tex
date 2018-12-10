@@ -1,0 +1,245 @@
+\documentclass[11pt]{article}
+\usepackage{fancyheadings,multicol}
+\usepackage{amsmath,amssymb}
+
+
+\setlength{\textheight}{\paperheight}
+\addtolength{\textheight}{-2in}
+\setlength{\topmargin}{-.5in}
+\setlength{\headsep}{.5in}
+\addtolength{\headsep}{-\headheight}
+\setlength{\footskip}{.5in}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-2in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\flushbottom
+
+\allowdisplaybreaks
+
+\pagestyle{fancyplain}
+\let\headrule=\empty
+\let\footrule=\empty
+\lhead{\fancyplain{}{Fall 2015}}
+\rhead{\fancyplain{}{CSCI-B555: Machine Learning}}
+\cfoot{{\thepage/\pageref{EndOfAssignment}}}
+
+\newcounter{totalmarks}
+\setcounter{totalmarks}{0}
+\newcounter{questionnumber}
+\setcounter{questionnumber}{0}
+\newcounter{subquestionnumber}[questionnumber]
+\setcounter{subquestionnumber}{0}
+\renewcommand{\thesubquestionnumber}{(\alph{subquestionnumber})}
+\newcommand{\question}[2][]%
+  {\ifx\empty#2\empty\else
+   \addtocounter{totalmarks}{#2}\refstepcounter{questionnumber}\fi
+   \bigskip\noindent\textbf{\Large Question \thequestionnumber. } #1
+   {\scshape\ifx\empty#2\empty(continued)\else
+   [#2 mark\ifnum #2 > 1 s\fi]\fi}\par
+   \medskip\noindent\ignorespaces}
+\newcommand{\subquestion}[2][]%
+  {\ifx\empty#2\empty\else\refstepcounter{subquestionnumber}\fi
+   \medskip\noindent\textbf{\large \thesubquestionnumber } #1
+   {\scshape\ifx\empty#2\empty(continued)\else
+   [#2 mark\ifnum #2 > 1 s\fi]\fi}
+   \smallskip\noindent\ignorespaces}
+\newcommand{\bonus}[2][]%
+  {\bigskip\noindent\textbf{\Large Bonus. } #1
+   {\scshape\ifx\empty#2\empty(continued)\else
+   [#2 mark\ifnum #2 > 1 s\fi]\fi}\par
+   \medskip\noindent\ignorespaces}
+
+\usepackage{totcount}
+\regtotcounter{totalmarks}
+
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}
+\bfseries
+{\Large Homework Assignment \# 2}\\
+   Due: Wednesday, October 14, 2015, 11:59 p.m. \\
+   Total marks: \total{totalmarks}
+\end{center}
+
+\question{15}
+Suppose that the number of accidents occurring daily in a certain plant has a 
+Poisson distribution with an unknown mean $\lambda$. 
+Based on previous experience in similar industrial plants, 
+suppose that our initial feelings about the possible value of $\lambda$ 
+can be expressed by an exponential distribution with parameter $\theta=\tfrac{1}{2}$. 
+That is, the prior density is
+%
+\begin{align*}
+f(\lambda)=\theta \textrm{e}^{-\theta\lambda}
+\end{align*}
+%
+%
+where $\lambda\in (0,\infty)$. 
+Assume there are 79 accidents over the next 9 days. 
+
+\subquestion{5} 
+Determine the maximum likelihood estimate of  $\lambda$.
+
+\subquestion{5} 
+Determine the maximum a posteriori estimate of  $\lambda$.
+
+\subquestion{5} 
+Look at the plots of some exponential distributions to better understand
+the prior chosen on $\lambda$. 
+Imagine that now new safety measures have been put in place
+and you believe that the number of accidents per day should sharply
+decrease. For example, maybe you now believe that 4 accidents per
+day would be a pretty high estimate. How might you
+change $\theta$ to better reflect this new belief about the number of accidents?
+
+
+\newcommand{\expf}[1]{\exp\left( #1 \right)}
+\question{25}
+Let $X_1, \ldots, X_n$ be i.i.d. Gaussian random variables, 
+each having an unknown mean $\theta$ and known variance $\sigma_0^2$. 
+
+\subquestion{5}
+ Assume $\theta$ is itself selected from a normal distribution $\mathcal{N}(\mu, \sigma^2)$ 
+ having a known mean $\mu$ and a known variance $\sigma^2$.
+What is the maximum a posteriori (MAP) estimate of $\theta$?
+
+\subquestion{10}
+ Assume $\theta$ is itself selected from a Laplace distribution $\mathcal{L}(\mu, b)$ 
+ having a known mean (location) $\mu$ and a known scale (diversity) $b$.
+ Recall that the pdf for a Laplace distribution is
+ %
+ \begin{align*}
+ p(x) = \frac{1}{2b} \expf{\frac{-|x - \mu |}{b}}
+ \end{align*}
+ %
+ %
+ For simplicity, assume $\mu = 0$.
+What is the maximum a posteriori estimate of $\theta$?
+If you cannot find a closed form solution, explain how
+you would use an iterative approach to obtain the solution.
+
+\subquestion{10}
+Now assume that we have \textbf{multivariate} i.i.d. Gaussian random variables, 
+$\mathbf{X}_1, \ldots, \mathbf{X}_n$ with each 
+$\mathbf{X}_i \sim \mathcal{N}(\boldsymbol{\theta}, \boldsymbol{\Sigma}_0)$ 
+for some unknown mean $\boldsymbol{\theta} \in \mathbb{R}^d$ and 
+known $\boldsymbol{\Sigma}_0 = \mathbf{I} \in \mathbb{R}^{d \times  d}$,
+where $\mathbf{I}$ is the identity matrix.
+ Assume $\boldsymbol{\theta} \in \mathbb{R}^d$ is selected from a zero-mean multivariate Gaussian 
+ $\mathcal{N}(\boldsymbol{\mu} = \mathbf{0}, \boldsymbol{\Sigma} = \sigma^2 \mathbf{I})$ 
+ and a known variance parameter $\sigma^2$ on the diagonal.
+What is the MAP estimate of $\boldsymbol{\theta}$?
+
+
+\question{10}
+Program the two iterative algorithms, gradient descent and Newton's method, 
+to find the minimum of a function of two-dimensional variable $\mathbf{x}=(x_1,x_2)$
+%
+\begin{align*}
+f(x)=100(x_2-x_1^2)^2+(1-x_1)^2
+\end{align*}
+%
+%
+Set the step length to $\eta=1$ and 
+try two different starting points: 
+$x^{(0)}=(1.2, 1.2)$ and a more difficult $x^{(0)}=(-1.2, 1)$. 
+Reduce the step size to some $\eta<1$ and repeat the minimization. 
+Show all your work and discuss the optimization processes you tested.
+
+\question{60}
+In this question, you will implement linear regression and Poisson regression.
+An initial script in python has been given to you, called
+\verb+script_classify.py+, and associated python files.
+You will be running on a blog dataset, with 230 features
+and 60,000 samples. Note that the first 50 features are
+constants for each sample, giving information about the features,
+and so are removed when the data is loaded.
+Baseline algorithms, including mean and random predictions,
+are used to serve as sanity checks. We should be able to outperform
+random predictions, and the mean value of the target in the training set.
+We will be examining some of the practical aspects
+of implementing regression. As a suggestion,
+you should start or complete Question 4 before doing this question.
+
+\subquestion{5}
+The main linear regression class is \verb+FSLinearRegression+.
+The FS stands for FeatureSelect.
+The provided implementation has subselected features
+and then simply explicitly solved for 
+$\mathbf{w} = (\mathbf{X}^\top \mathbf{X})^{-1} \mathbf{X}^\top \mathbf{y}$.
+Increase the number of selected features (including all the way to including all the feature).
+What do you find?
+How can this be remedied?
+
+\subquestion{10}
+Now implement Ridge Regression, where a ridge regularizer 
+$ \lambda \| \mathbf{w} \|_2^2$ is added to the optimization.
+Run this algorithm on all the features. How does the result differ from (a)?
+Discuss results for different regularization parameter $\lambda$ values. 
+Modify the code to report error average over multiple splits of the data (at least 10 splits).
+
+\subquestion{10}
+Imagine that the dataset size continues to grow, which causes the matrices
+to become large $\boldsymbol{X} \in \mathbb{R}^{n \times d}$
+for $n$ samples and $d$ features. 
+One option is to go back to subselecting features. 
+In \verb+FSLinearRegression+, add an approach to select 10 features
+and explain your choice. How does accuracy change compared to
+the original \verb+FSLinearRegression+ and \verb+RidgeRegression+?
+What happens to the accuracy of the solution?
+
+\subquestion{15}
+Now imagine that your dataset has gotten even larger,
+to the point where dropping features is not enough.
+Instead of removing features, implement a stochastic optimization approach to obtaining the
+linear regression solution (see Section 4.5.3). 
+Explain your implementation choices. 
+
+\subquestion{20}
+Next you notice that the target is always positive, with many zeros and small numbers and a few
+large values. These target values look a little like they could come from a Poisson distribution.
+You recall that generalized linear models allow non-linear transfers
+on the linear solution, and that conveniently the Poisson distribution happens to have
+a nice link function. Implement Poisson regression on this data.
+Hint: using an exponential transfer can cause numerical instabilities. For training,
+you might consider scaling down the target so that there are not such large values.
+Moreover, the approach can be somewhat sensitive to features being collinear.
+You could consider subselecting some number of features once again. Explain
+the choices you use. You should be able to obtain better performance than linear regression.
+
+
+
+
+\vspace{0.5cm}
+\begin{center}
+{\large \textbf{Homework policies:}}
+\end{center}
+Your assignment must be typed; for example, in Latex, Microsoft Word, Lyx, etc. 
+Images may be scanned and inserted into the document if it is too complicated to draw them properly. 
+Submit a single pdf document or, if you are attaching your code, 
+submit your code together with the typed (single) document as one .zip file.
+All code (if applicable) should be turned in when you submit your assignment. 
+Use Matlab, Python, R, Java or C.
+Policy for late submission assignments: Unless there are legitimate circumstances, late assignments will be accepted up to 5 days after the due date and graded using the following rule: 
+\begin{enumerate}
+\itemsep0em 
+\item[]    on time:	your score × 1
+ \item[]   1 day late: 	your score × 0.9
+\item[]    2 days late: 	your score × 0.7
+\item[]    3 days late: 	your score × 0.5
+ \item[]   4 days late: 	your score × 0.3
+ \item[]   5 days late: 	your score × 0.1
+\end{enumerate}
+For example, this means that if you submit 3 days late and get 80 points for your answers, your total number of points will be $80 \times 0.5 = 40$ points.
+All assignments are individual, except when collaboration is explicitly allowed. All the sources used for problem solution must be acknowledged, e.g. web sites, books, research papers, personal communication with people, etc. Academic honesty is taken seriously; for detailed information see Indiana University Code of Student Rights, Responsibilities, and Conduct.
+\begin{center}
+{\large \textbf{Good luck!}}
+\end{center}
+
+\label{EndOfAssignment}%
+
+\end{document}
