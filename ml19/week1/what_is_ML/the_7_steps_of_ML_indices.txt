@@ -1,0 +1,7 @@
+1:49 | Gathering Data
+2:21 | Preparing Data
+4:03 | Model Selection
+4:30 | Training
+6:46 | Evaluation
+7:24 | Parameter Tuning
+8:55 | Prediction?
