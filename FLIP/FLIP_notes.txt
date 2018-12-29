@@ -1,0 +1,50 @@
+Resources:
+
+This is the perfect time for me to apply correct teaching methods. I have no doubts, I am also taking other classes as well, but you have to be aware that these two classes are not the best for optimal return in teaching paradigms. I am not looking for excuses, it's the community that didn't yet find the best way to teach Machine Learning. For example this reference release in Aug 2017, may give you more details:
+Machine Teaching. A New Paradigm for Building Machine Learning Systems
+https://arxiv.org/pdf/1707.06742.pdf
+
+Regarding the material that I have, I'd prefer to meet Wednesday in my office and go over it. I could upload it online but I currently see no value in this activity.
+The material is split among my google drive, my YU github, my laptop, my desktop, bookmarks, some of them are just print outs that sit in my office ready to be inserted into the material.
+
+An outline of what I have may look like this:
+
+(Other) Textbooks
+
+(Other) Courses
+	- slides
+	- notes
+	- assignments
+	- projects
+
+Online Courses
+	- slides
+	- notes
+	- video lectures
+	- assignments
+	- projects
+
+Prereqs material
+
+Other Online Material (blogs, articles, videos)
+	- Data Camp
+	- Computer Science Unplugged
+		http://dt-resources.appspot.com/node/16
+		https://classic.csunplugged.org/artificial-intelligence/
+	- Data Science Central (see ML and AI section): https://www.datasciencecentral.com/
+
+Teaching Courses
+	- linkedin PowerPoint for Teachers: Creating Interactive Lessons
+
+I have attended Machine Learning events and interacted with people in the field (I have meetings scheduled for January to discuss and organize possible field trips for students for the end of semester). I know that many of these are beyond the scope of my responsibilities and that's why I did it outside of the working hours.
+
+
+
+Add in today's journal
+I think patience is linked to activities. You have to ask yourself: what are the activities for which you want to allocate more patience? (and then allocate more time for those activities. You will be able to speed them up later)
+
+Eu sunt imprastiat si nu stiu cum sa ma adun
+
+Investment:
+thearorareport.com
+optionalpha.com
