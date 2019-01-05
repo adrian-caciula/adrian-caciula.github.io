@@ -1,25 +1,43 @@
+﻿
+Week 2
 
 
 Exploratory Data Analysis
 
 
+
+
 Why is EDA important during the initial exploration of a dataset?
+
 What are the most essential tools of graphical and non-graphical EDA?
+
 
 
 examine the data for distribution, outliers and anomalies to direct specific testing of your hypothesis.
 
 
+
+
 EDA Objectives:
+
 Maximize insight into the database/understand the database structure;
+
 Visualize potential relationships (direction and magnitude) between exposure and outcome variables;
+
 Detect outliers and anomalies (values that are significantly different from the other observations);
+
 Develop parsimonious models (a predictive or explanatory model that performs with as few exposure variables as possible) or preliminary selection of appropriate models;
+
 Extract and create clinically relevant variables.
+
+
 Reference: seee the article
 
 
-When statistics are not based on strictly accurate calculations, they mislead instead of guide. The mind
+
+When statistics are not based on strictly accurate calculations, they mislead instead of guide. 
+
+The mind
 easily lets itself be taken in by the false appearance of exactitude which statistics retain in their
 mistakes, and confidently adopts errors clothed in the form of mathematical truth.
 —Alexis de Tocqueville, Democracy in America
@@ -33,6 +51,8 @@ Type 1 error
 Mistakenly concluding an effect is real (when it is due to chance).
 Type 2 error
 Mistakenly concluding an effect is due to chance (when it is real).
+
+
 
 
 Data Cleaning: Types and Techniques
@@ -58,6 +78,7 @@ To learn the special cases occurred in regular expression / pattern matching
 Regular Expressions (RE). A pattern that specifies a set of character strings.
 REs are most often used to find sequences of characters in strings.</p>
 
+
 https://teamtreehouse.com/library/regular-expressions-in-python
 
 Learn what the three core regex classes are and what they do
@@ -69,6 +90,7 @@ Know how to reference matches by capturing groups
 
 
 Open Refine. Tool for cleaning large datasets
+
 https://github.com/OpenRefine/OpenRefine/wiki/Recipes
 https://datacarpentry.org/2015-09-21-Genentech/
 
@@ -80,10 +102,14 @@ https://vironit.com/data-visualization-techniques/
 Vizualization Courses
 
 Skillshare
+
 https://www.skillshare.com/site/join?teacherRef=8606490&via=teacher-referral-channel&utm_campaign=teacher-referral-channel&utm_source=ShortUrl&utm_medium=teacher-referral-channel&vanityUsername=feltron
 
 Effective Data Visualization
+
 https://www.experfy.com/training/courses/effective-data-visualization#curriculum
+
+
 
 
 Teaching and Learning Data Visualization: Ideas and Assignments
@@ -138,3 +164,27 @@ I am even considering that maybe you should go in Romania with kids for December
 Cut everything that don't provide value such as talking about people, and what else did you do. Ask specific questions, or just read to improve your weakness. What are our weakness and strengths
 STOP TALKING . What is the most important thing
 
+
+
+
+Week 3
+To remove or not to remove
+https://pareonline.net/getvn.asp?v=9&n=6
+
+Week5
+What are Outliers and Fringeliers and why do we care about them?What causes outliers and what should we do about them
+How to deal with outliers. To remove, or not to remove?
+Reference: https://pareonline.net/getvn.asp?v=9&n=6
+
+Week7
+Why do we need effect size?
+How to obtain and interpret effect size?
+https://people.kth.se/~lang/Effect_size.pdf
+
+
+HyperStat Online Contents. Free Statistical Analysis Software
+http://davidmlane.com/hyperstat/Statistical_analyses.html
+
+Other questions:
+Why is accuracy not the best measure for assessing classification models?
+https://stats.stackexchange.com/questions/312780/why-is-accuracy-not-the-best-measure-for-assessing-classification-models
